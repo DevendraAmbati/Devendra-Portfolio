@@ -1,5 +1,5 @@
 import React from "react";
-import justflip from "../assets/justFlip.svg";
+import justflip from "../assets/justFlip.webp"; 
 import Rnr from "../assets/Rnr.svg";
 import Lic from "../assets/Lic.svg";
 import Gstare from "../assets/G-stare.svg";
