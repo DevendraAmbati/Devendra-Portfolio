@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../assets/devendra.webp";
+import img from "../assets/Devendra.webp";
 import { TypeAnimation } from "react-type-animation";
 
 const Home = () => {
