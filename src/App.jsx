@@ -12,7 +12,6 @@ const Services = lazy(() => import('./pages/Services'));
 const MyProjects = lazy(() => import('./pages/MyProjects'));
 const Contact = lazy(() => import('./pages/Contact'));
 
-
 function App() {
 
   return (
