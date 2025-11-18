@@ -14,7 +14,7 @@ const Services = () => {
       <div className="md:max-w-3xl mx-auto mt-5 text-center">
         <p className="text-white font-medium text-sm md:text-base">
           I’m a passionate <span className="font-semibold text-[#9aa6ff]">React Frontend Developer</span> 
-          with 2+ years of experience building responsive and dynamic web applications. Skilled in 
+           with 2+ years of experience building responsive and dynamic web applications. Skilled in 
           <span className="font-semibold text-[#9aa6ff]"> React.js, Redux, Tailwind CSS, Bootstrap, and RESTful APIs</span>, 
           I specialize in creating modern, engaging, and user-focused interfaces. My goal is to deliver clean, 
           scalable, and high-performance solutions that enhance user experience and meet business goals.
