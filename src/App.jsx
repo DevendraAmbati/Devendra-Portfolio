@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className=' relative   '> 
-     <div className=' fixed w-full xl:w-[1235px] mx-auto top-2 left-0 right-0 z-50 '>
+     <div className=' fixed w-full xl:w-[1400px] mx-auto top-2 left-0 right-0 z-50 '>
       <Navbar />
       </div> 
       <Home/>
