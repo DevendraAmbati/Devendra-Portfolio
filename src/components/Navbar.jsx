@@ -117,7 +117,7 @@ const Navbar = () => {
 
           <li>
             <a
-              href="https://drive.google.com/file/d/1j42lmHEmL4kQoB2EM9sYwsbA_Wb9uehe/view?usp=sharing"
+              href="https://drive.google.com/file/d/122DqmuXDoa4vbzuDCYjBl0q7QneEf-OH/view?usp=sharing"
               download
               target="_blank"
               onClick={handleLinkClick}
