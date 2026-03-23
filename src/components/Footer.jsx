@@ -17,9 +17,6 @@ const Footer = ()=>{
             I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Feel free to reach out!
         </p>
         <div className="grid grid-flow-col justify-start ">
-            <a href="https://github.com/DevendraAmbati" traget="_blank" rel="noopener noreferrer">
-            <FaGithub className="text-3xl text-white mt-6 hover:text-[#FD6F00] cursor-pointer" />
-            </a>
             <a href="https://www.linkedin.com/in/devendraambati" traget="_blank" rel="noopener noreferrer">
             <FaLinkedin className="text-3xl text-white mt-6 ml-4 hover:text-[#FD6F00] cursor-pointer" />
             </a>

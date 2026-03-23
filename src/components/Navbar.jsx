@@ -53,17 +53,17 @@ const Navbar = () => {
         </div>
 
         <div className="hidden lg:flex items-center gap-6">
-<a
-  href={Resume}
-  download="Devendra_Resume.pdf"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="relative px-[1px] py-[1px] rounded-lg bg-gradient-to-r from-[#FD6F00] to-[#6A11CB]"
->
-  <span className="block px-4 py-2 text-sm font-semibold text-[#CAD1E9] bg-[#0F172A] rounded-lg">
-    Download Resume
-  </span>
-</a>
+          <a
+            href={Resume}
+            download="Devendra_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative px-[1px] py-[1px] rounded-lg bg-gradient-to-r from-[#FD6F00] to-[#6A11CB]"
+          >
+            <span className="block px-4 py-2 text-sm font-semibold text-[#CAD1E9] bg-[#0F172A] rounded-lg">
+              Download Resume
+            </span>
+          </a>
         </div>
 
 
