@@ -7,7 +7,7 @@ const Home = () => {
     <>
       <div
         id="home"
-        className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-4 mt-10 my-10 "
+        className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-4 mt-10 my-10 px-4 md:px-8 "
       >
         <div className="flex flex-col justify-start items-start gap-4">
           <h1 className="font-semibold text-[#ffffff] text-xl">Hi I am <span className="font-semibold text-2xl text-[#FD6F00]">Ambati Devendra</span></h1>

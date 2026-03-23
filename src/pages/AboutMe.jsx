@@ -3,7 +3,7 @@ import img from "../assets/About_me.webp";
 
 const AboutMe = () => {
   return (
-    <div id="about-us" className="my-16 px-4 md:px-8">
+    <div id="about-us" className="my-16 px-4 md:px-8 ">
       <div className="grid gap-10 md:grid-cols-2 items-center">
         {/* Image Section */}
         <div className="flex items-center justify-center">

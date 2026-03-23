@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom"
+import Resume from "../assets/Devendra-React_Frontend_developer.pdf"
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -27,15 +29,15 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="w-full  top-3 px-4 py-3 bg-none mx-auto bg-[#101722]/90  border rounded-lg border-[#dcdbde24] shadow z-[9999]">
+    <nav className="w-full top-3 px-4 py-3 bg-none  bg-[#101722]/90  border rounded-lg border-[#dcdbde24] shadow z-[9999]">
       <div className="container flex items-center justify-between mx-auto">
         <a
           href="/"
           className="text-lg font-bold tracking-wide cursor-pointer text-[#CAD1E9] transition"
         >
-          DEVENDRA AMBATI
+          AMBATI DEVENDRA
         </a>
-                <div className="hidden lg:flex items-center gap-6">
+        <div className="hidden lg:flex items-center gap-6">
           <ul className="flex gap-8">
             {menuItems.map((item, index) => (
               <li key={index}>
@@ -50,18 +52,19 @@ const Navbar = () => {
           </ul>
         </div>
 
-<div className="hidden lg:flex items-center gap-6">
-  <a
-    href="https://drive.google.com/file/d/1j42lmHEmL4kQoB2EM9sYwsbA_Wb9uehe/view?usp=sharing"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="relative px-[1px] py-[1px] rounded-lg bg-gradient-to-r from-[#FD6F00] to-[#6A11CB]  transition"
-  >
-    <span className="block px-4 py-2 text-sm font-semibold text-[#CAD1E9] bg-[#0F172A] rounded-lg">
-      Download Resume
-    </span>
-  </a>
-</div>
+        <div className="hidden lg:flex items-center gap-6">
+<a
+  href={Resume}
+  download="Devendra_Resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="relative px-[1px] py-[1px] rounded-lg bg-gradient-to-r from-[#FD6F00] to-[#6A11CB]"
+>
+  <span className="block px-4 py-2 text-sm font-semibold text-[#CAD1E9] bg-[#0F172A] rounded-lg">
+    Download Resume
+  </span>
+</a>
+        </div>
 
 
         {/* Mobile Hamburger */}
@@ -84,9 +87,8 @@ const Navbar = () => {
 
       {/* Full-Screen Mobile Menu */}
       <div
-        className={`fixed inset-0 z-[10000] bg-[#0B1120] transform transition-transform duration-500 ease-in-out ${
-          open ? "translate-x-0" : "translate-x-full"
-        }`}
+        className={`fixed inset-0 z-[10000] bg-[#0B1120] transform transition-transform duration-500 ease-in-out ${open ? "translate-x-0" : "translate-x-full"
+          }`}
       >
         {/* Close Button */}
         <button
@@ -117,11 +119,11 @@ const Navbar = () => {
 
           <li>
             <a
-              href="https://drive.google.com/file/d/122DqmuXDoa4vbzuDCYjBl0q7QneEf-OH/view?usp=sharing"
-              download
+              href={Resume}
+              download="Devendra_Resume.pdf"
               target="_blank"
               onClick={handleLinkClick}
-              className="px-4 py-3  text-sm font-semibold text-[#CAD1E9] bg-white/10 rounded-lg transition"
+              className="px-4 py-3 text-sm font-semibold text-[#CAD1E9] bg-white/10 rounded-lg"
             >
               Download Resume
             </a>
