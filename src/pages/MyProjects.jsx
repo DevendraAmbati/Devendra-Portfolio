@@ -5,6 +5,7 @@ import Lic from "../assets/Lic.svg";
 import Gstare from "../assets/G-stare.svg";
 import Markanthony from "../assets/Markanthony.png";
 import Dashbord from "../assets/Dashboard.svg";
+import Astrology from "../assets/Astrology.png";
 
 const projects = [
   {
@@ -32,7 +33,7 @@ const projects = [
     title: "Astrology Project",
     description:
       "The site explains astrology as a system used to understand life, personality, and future through celestial bodies, users, and performance analytics using React and SSR.",
-    image: Rnr,
+    image: Astrology,
     link: "https://astrology-smoky.vercel.app",
   },
   {
