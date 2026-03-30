@@ -29,25 +29,25 @@ const projects = [
     link: "https://markanthony.in",
   },
   {
-    title: "RNR Project",
+    title: "Astrology Project",
     description:
-      "Enterprise-grade web dashboard for managing reports, users, and performance analytics using React and Redux Toolkit.",
+      "The site explains astrology as a system used to understand life, personality, and future through celestial bodies, users, and performance analytics using React and SSR.",
     image: Rnr,
-    link: "#",
+    link: "https://astrology-smoky.vercel.app",
   },
   {
     title: "LIC Management Portal",
     description:
       "Insurance management platform featuring policy tracking, client dashboards, and data visualization modules.",
     image: Lic,
-    link: "#",
+    link: "https://lic-xi.vercel.app/",
   },
   {
     title: "G-Stare Analytics",
     description:
       "A marketing and analytics platform for tracking campaign performance and engagement in real-time.",
     image: Gstare,
-    link: "#",
+    link: "https://g-star.vercel.app/",
   },
 ];
 
