@@ -1,22 +1,11 @@
 import React from "react";
 
 const workExperienceData = [
-  {
+    {
     id: 1,
     position: "Frontend Developer",
-    company: "Mark Anthony Ventures",
-    duration: "Mar 2024 - Present",
-    responsibilities: [
-      "Built responsive and dynamic user interfaces using React.js, HTML, CSS, Bootstrap, and JavaScript.",
-      "Implemented Redux and Context API for efficient state management and integrated RESTful APIs for seamless backend communication.",
-      "Optimized performance and scalability using modern frontend tools like Vite and Node.js.",
-    ],
-  },
-  {
-    id: 2,
-    position: "Junior Developer",
-    company: "Bloom IT Solutions",
-    duration: "Sep 2023 - Dec 2023",
+    company: "Oracliumai",
+    duration: "May 2026 - Jul 2026",
     responsibilities: [
       "Developed interactive web applications using React.js and Tailwind CSS for modern, responsive UIs.",
       "Integrated REST APIs for dynamic data handling and smooth frontend-backend interaction.",
@@ -25,10 +14,22 @@ const workExperienceData = [
     ],
   },
   {
+    id: 2,
+    position: "Frontend Developer",
+    company: "Mark Anthony Ventures",
+    duration: "Mar 2024 - Nov 2025",
+    responsibilities: [
+      "Built responsive and dynamic user interfaces using React.js, HTML, CSS, Bootstrap, and JavaScript.",
+      "Implemented Redux and Context API for efficient state management and integrated RESTful APIs for seamless backend communication.",
+      "Optimized performance and scalability using modern frontend tools like Vite and Node.js.",
+    ],
+  },
+
+  {
     id: 3,
     position: "Junior Developer",
     company: "Ace Web Solutions",
-    duration: "Mar 2023 - Aug 2023",
+    duration: "Mar 2023 - Dec 2023",
     responsibilities: [
       "Built and styled responsive websites using HTML, CSS, and JavaScript.",
       "Applied semantic HTML, Flexbox, and CSS Grid for clean, visually appealing layouts.",
