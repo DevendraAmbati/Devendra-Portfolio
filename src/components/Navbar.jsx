@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom"
 import Resume from "../assets/Devendra_Frontend_developer.pdf"
 
+
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
