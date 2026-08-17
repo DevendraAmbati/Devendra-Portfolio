@@ -1,7 +1,7 @@
 import { lazy, Suspense, useState, useEffect } from "react";
 import "./App.css";
 import "./index.css";
-
+import VoiceAssistant from "./components/VoiceAssistant";
 const Navbar = lazy(() => import("./components/Navbar"));
 const Footer = lazy(() => import("./components/Footer"));
 const Home = lazy(() => import("./pages/Home"));
@@ -115,6 +115,8 @@ function App() {
             <Footer />
           </div>
         </footer>
+          <VoiceAssistant />
+
       </div>
     </Suspense>
   );

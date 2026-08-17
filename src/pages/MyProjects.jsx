@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-
 import justflip from "../assets/JustFlip.webp";
 import Lic from "../assets/Lic.svg";
 import Gstare from "../assets/G-stare.svg";
@@ -44,7 +43,7 @@ const projects = [
     link: "https://lic-xi.vercel.app/",
   },
   {
-    title: "G-Stare Analytics",
+    title: "G-Star Analytics",
     description:
       "A marketing and analytics platform for tracking campaign performance and engagement in real-time.",
     image: Gstare,
