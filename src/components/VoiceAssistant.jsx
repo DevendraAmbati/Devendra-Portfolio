@@ -3,48 +3,124 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const sectionContent = {
   home: `
-    Hello, I'm Ambati Devendra, a React Frontend Developer.
-    I specialize in building fast, responsive, and dynamic web applications
-    using React.js and modern JavaScript.
-    I have experience with React.js, JavaScript, Redux Toolkit,
-    Tailwind CSS, Bootstrap, REST APIs, and modern frontend development.
-    I focus on creating clean, reusable, accessible, and user-friendly
-    interfaces.
-  `,
+Hello, I'm Ambati Devendra, a React Frontend Developer.
+
+I specialize in building modern, responsive, and high-performance
+web applications.
+
+My experience includes working with React.js, Redux Toolkit,
+Vite, Tailwind CSS, Bootstrap, REST APIs, and modern frontend
+development practices.
+
+I enjoy transforming ideas and designs into clean, interactive,
+and user-friendly interfaces that work smoothly across desktop,
+tablet, and mobile devices.
+
+I focus on building reusable React components, maintaining clean
+and scalable code, integrating APIs, managing application state,
+and improving the overall performance and user experience.
+
+I have worked on real-world projects including real estate
+platforms, dashboards, business websites, and other interactive
+web applications.
+
+I'm passionate about learning new technologies, solving frontend
+problems, and creating digital experiences that are both visually
+appealing and easy to use.
+
+If you're looking for a frontend developer to build modern,
+responsive, and reliable React applications, I'd be happy to
+work with you.
+`,
 
   about: `
-    About Me.
-    I'm a passionate React Frontend Developer with experience in modern
-    web development.
-    I specialize in creating interactive, high-performance,
-    and responsive user interfaces.
-    My technical skills include HTML, CSS, JavaScript, React.js,
-    Redux Toolkit, Tailwind CSS, Bootstrap, and RESTful APIs.
-    I focus on clean code, reusable components, performance optimization,
-    and delivering excellent user experiences.
-  `,
+Let me tell you a little about myself.
 
+I'm Ambati Devendra, a React Frontend Developer who enjoys
+building modern and interactive web experiences.
+
+My main focus is creating responsive interfaces that look great
+and work smoothly across different devices and screen sizes.
+
+I work primarily with React.js and JavaScript, along with
+technologies such as Redux Toolkit, Tailwind CSS, Bootstrap,
+Vite, HTML, CSS, and RESTful APIs.
+
+One of my key strengths is building reusable components and
+keeping frontend code clean, structured, and easy to maintain.
+
+I also enjoy working with APIs, managing application state,
+optimizing performance, and solving frontend challenges that
+improve the overall user experience.
+
+For me, frontend development is about more than just writing code.
+It's about understanding the user, creating intuitive interactions,
+and turning ideas into reliable digital experiences.
+
+I'm always interested in learning new technologies and finding
+better ways to build scalable and high-quality applications.
+
+Thanks for taking the time to learn more about me.
+I hope you enjoy exploring my portfolio.
+`,
   experience: `
-    Work Experience.
-    I worked as a Frontend Developer at Oracliumai,
-    where I developed interactive web applications using React.js
-    and Tailwind CSS, integrated REST APIs, and worked on responsive
-    user interfaces.
+Let me walk you through my work experience.
 
-    I also worked as a Frontend Developer at Mark Anthony Ventures,
-    where I built responsive and dynamic interfaces using React.js,
-    JavaScript, Bootstrap, Redux, Context API, and REST APIs.
+I have professional experience working as a Frontend Developer,
+where I have worked on building responsive, interactive, and
+user-friendly web applications using modern frontend technologies.
 
-    Earlier, I worked as a Junior Developer at Ace Web Solutions,
-    where I developed responsive websites using HTML, CSS, and JavaScript.
-  `,
+Most recently, I worked as a Frontend Developer at Oracliumai.
+There, I developed interactive web applications using React.js
+Tailwind CSS and Framer Motion. I focused on creating reusable and responsive
+UI components and making sure the applications worked smoothly
+across different screen sizes.
+
+I also integrated REST APIs to handle dynamic application data
+and worked on frontend and backend communication. I focused on
+creating clean user interfaces, improving usability, and
+maintaining a consistent design across the application.
+
+Before that, I worked as a Frontend Developer at Mark Anthony Ventures,
+where I contributed to multiple real-world web applications, including
+the JustFlip Real Estate Portal and the Mark Anthony website.
+
+For JustFlip, I developed responsive React.js interfaces for property
+listings, property search, property details, and other real-estate
+features.
+
+I integrated RESTful APIs for dynamic data handling and used Redux Toolkit
+for application state management. I also created reusable
+React components and focused on maintaining clean, scalable, and
+maintainable frontend architecture.
+
+I also worked on the Mark Anthony website, where I developed modern,
+responsive UI sections with a strong focus on user experience. I worked
+on reusable components, interactive elements, animations, and responsive
+layouts across desktop, tablet, and mobile devices.
+
+These projects strengthened my practical experience with React.js,
+JavaScript, REST APIs, Redux, Context API, Vite, responsive design,
+reusable components, and frontend performance optimization.
+
+Earlier in my career, I worked as a Junior Developer at Ace Web Solutions.
+There, I built and styled responsive websites using HTML, CSS,
+and JavaScript.
+
+This experience helped me build a strong foundation in frontend
+development and gave me practical experience working with modern
+web technologies.
+
+Overall, my professional experience has helped me develop strong
+skills in reusable components,
+and modern frontend development practices.
+`,
 
   technical: `
     Technical Skills.
     My core frontend technologies include React.js, JavaScript,
     TypeScript, HTML5, CSS3, Tailwind CSS, Bootstrap,
-    Redux Toolkit, React Router, REST APIs, Axios, Git, GitHub,
-    Vite, and Firebase.
+    Redux Toolkit, React Router, REST APIs, Axios, Git, GitHub, Framer Motion and Vite.
     I also have experience with responsive design,
     performance optimization, reusable components,
     and modern frontend architecture.
@@ -115,16 +191,14 @@ const VoiceAssistant = () => {
     }
 
     const loadVoices = () => {
-      const availableVoices =
-        window.speechSynthesis.getVoices();
+      const availableVoices = window.speechSynthesis.getVoices();
 
       setVoices(availableVoices);
     };
 
     loadVoices();
 
-    window.speechSynthesis.onvoiceschanged =
-      loadVoices;
+    window.speechSynthesis.onvoiceschanged = loadVoices;
 
     return () => {
       window.speechSynthesis.cancel();
@@ -137,36 +211,27 @@ const VoiceAssistant = () => {
     };
   }, []);
 
-
   const getEnglishVoice = () => {
     if (!voices.length) return null;
 
     return (
-      voices.find(
-        (voice) => voice.lang === "en-IN"
-      ) ||
-      voices.find(
-        (voice) => voice.lang.startsWith("en")
-      ) ||
+      voices.find((voice) => voice.lang === "en-IN") ||
+      voices.find((voice) => voice.lang.startsWith("en")) ||
       voices[0]
     );
   };
 
   const speak = () => {
     if (!("speechSynthesis" in window)) {
-      alert(
-        "Your browser does not support text-to-speech."
-      );
+      alert("Your browser does not support text-to-speech.");
       return;
     }
 
     window.speechSynthesis.cancel();
 
-    const text =
-      sectionContent[selectedSection];
+    const text = sectionContent[selectedSection];
 
-    const utterance =
-      new SpeechSynthesisUtterance(text);
+    const utterance = new SpeechSynthesisUtterance(text);
 
     utterance.rate = 0.9;
     utterance.pitch = 1;
@@ -195,9 +260,7 @@ const VoiceAssistant = () => {
 
     utteranceRef.current = utterance;
 
-    window.speechSynthesis.speak(
-      utterance
-    );
+    window.speechSynthesis.speak(utterance);
   };
 
   /* --------------------------------
@@ -205,9 +268,7 @@ const VoiceAssistant = () => {
   -------------------------------- */
 
   const pause = () => {
-    if (
-      window.speechSynthesis.speaking
-    ) {
+    if (window.speechSynthesis.speaking) {
       window.speechSynthesis.pause();
 
       setIsPaused(true);
@@ -219,16 +280,12 @@ const VoiceAssistant = () => {
   -------------------------------- */
 
   const resume = () => {
-    if (
-      window.speechSynthesis.paused
-    ) {
+    if (window.speechSynthesis.paused) {
       window.speechSynthesis.resume();
 
       setIsPaused(false);
     }
   };
-
-  
 
   /* --------------------------------
      Stop
@@ -292,9 +349,7 @@ const VoiceAssistant = () => {
             ))}
           </div>
         ) : (
-          <span className="text-xl">
-            🔊
-          </span>
+          <span className="text-xl">🔊</span>
         )}
       </motion.button>
 
@@ -379,9 +434,7 @@ const VoiceAssistant = () => {
 
             <select
               value={selectedSection}
-              onChange={(e) =>
-                changeSection(e.target.value)
-              }
+              onChange={(e) => changeSection(e.target.value)}
               className="
                 mb-5
                 w-full
@@ -397,14 +450,8 @@ const VoiceAssistant = () => {
                 focus:border-[#FD6F00]
               "
             >
-              {Object.entries(
-                sectionNames
-              ).map(([key, name]) => (
-                <option
-                  key={key}
-                  value={key}
-                  className="bg-[#182231]"
-                >
+              {Object.entries(sectionNames).map(([key, name]) => (
+                <option key={key} value={key} className="bg-[#182231]">
                   {name}
                 </option>
               ))}
@@ -425,45 +472,34 @@ const VoiceAssistant = () => {
                 bg-white/[0.03]
               "
             >
-              {[...Array(20)].map(
-                (_, index) => (
-                  <motion.span
-                    key={index}
-                    animate={
-                      isSpeaking &&
-                      !isPaused
-                        ? {
-                            height: [
-                              "6px",
-                              `${12 + Math.random() * 30}px`,
-                              "8px",
-                            ],
-                          }
-                        : {
-                            height: "6px",
-                          }
-                    }
-                    transition={{
-                      duration:
-                        0.5 +
-                        Math.random() *
-                          0.5,
-                      repeat:
-                        isSpeaking &&
-                        !isPaused
-                          ? Infinity
-                          : 0,
-                      delay:
-                        index * 0.03,
-                    }}
-                    className="
+              {[...Array(20)].map((_, index) => (
+                <motion.span
+                  key={index}
+                  animate={
+                    isSpeaking && !isPaused
+                      ? {
+                          height: [
+                            "6px",
+                            `${12 + Math.random() * 30}px`,
+                            "8px",
+                          ],
+                        }
+                      : {
+                          height: "6px",
+                        }
+                  }
+                  transition={{
+                    duration: 0.5 + Math.random() * 0.5,
+                    repeat: isSpeaking && !isPaused ? Infinity : 0,
+                    delay: index * 0.03,
+                  }}
+                  className="
                       w-[3px]
                       rounded-full
                       bg-[#FD6F00]
                     "
-                  />
-                )
-              )}
+                />
+              ))}
             </div>
 
             {/* Current Section */}
@@ -477,7 +513,6 @@ const VoiceAssistant = () => {
 
             {/* Controls */}
             <div className="flex items-center justify-center gap-3">
-
               {/* Start */}
               {!isSpeaking && (
                 <motion.button
@@ -510,14 +545,13 @@ const VoiceAssistant = () => {
               )}
 
               {/* Pause */}
-              {isSpeaking &&
-                !isPaused && (
-                  <motion.button
-                    whileTap={{
-                      scale: 0.95,
-                    }}
-                    onClick={pause}
-                    className="
+              {isSpeaking && !isPaused && (
+                <motion.button
+                  whileTap={{
+                    scale: 0.95,
+                  }}
+                  onClick={pause}
+                  className="
                       flex
                       flex-1
                       items-center
@@ -531,21 +565,20 @@ const VoiceAssistant = () => {
                       font-medium
                       hover:bg-white/15
                     "
-                  >
-                    <span>⏸</span>
-                    Pause
-                  </motion.button>
-                )}
+                >
+                  <span>⏸</span>
+                  Pause
+                </motion.button>
+              )}
 
               {/* Resume */}
-              {isSpeaking &&
-                isPaused && (
-                  <motion.button
-                    whileTap={{
-                      scale: 0.95,
-                    }}
-                    onClick={resume}
-                    className="
+              {isSpeaking && isPaused && (
+                <motion.button
+                  whileTap={{
+                    scale: 0.95,
+                  }}
+                  onClick={resume}
+                  className="
                       flex
                       flex-1
                       items-center
@@ -558,11 +591,11 @@ const VoiceAssistant = () => {
                       text-sm
                       font-medium
                     "
-                  >
-                    <span>▶</span>
-                    Resume
-                  </motion.button>
-                )}
+                >
+                  <span>▶</span>
+                  Resume
+                </motion.button>
+              )}
 
               {/* Stop */}
               {isSpeaking && (

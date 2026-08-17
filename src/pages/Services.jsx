@@ -21,7 +21,7 @@ const Services = () => {
           applications. Skilled in
           <span className="font-semibold text-[#9aa6ff]">
             {" "}
-            React.js, Redux, Tailwind CSS, Bootstrap, and RESTful APIs
+            React.js, Redux, Tailwind CSS, Bootstrap, Vite, and RESTful APIs
           </span>
           , I specialize in creating modern, engaging, and user-focused
           interfaces. My goal is to deliver clean, scalable, and
