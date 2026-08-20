@@ -6,6 +6,8 @@ import Markanthony from "../assets/Markanthony.png";
 import Dashbord from "../assets/Dashboard.svg";
 import Astrology from "../assets/Astrology.png";
 
+const Egov =
+  "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070";
 const projects = [
   {
     title: "JustFlip – Real Estate Portal",
@@ -20,6 +22,13 @@ const projects = [
       "Developed an advanced Admin & Builder Dashboard for JustFlip with multi-level access control. Builders can manage property listings, admins can manage blogs and users, and role-based access ensures secure management. Includes lead generation, JWT + refresh tokens, and multiple property types.",
     image: Dashbord,
     link: "https://just-filp-dashboard.vercel.app/",
+  },
+    {
+    title: "e-Government Portal",
+    description:
+      "An e-Government Portal built with React.js that provides a user-friendly and responsive platform for accessing government-related services and information. The application uses a reusable component-based architecture to create clean, scalable, and maintainable interfaces. It includes responsive layouts, interactive.",
+    image: Egov,
+    link: "https://e-gov-react-brown.vercel.app/",
   },
   {
     title: "MarkAnthony",
@@ -49,6 +58,7 @@ const projects = [
     image: Gstare,
     link: "https://g-star.vercel.app/",
   },
+  
 ];
 
 const containerVariants = {
@@ -117,7 +127,6 @@ const MyProjects = () => {
         </p>
       </motion.div>
 
-      {/* Projects */}
       <motion.div
         variants={containerVariants}
         initial="hidden"
@@ -171,7 +180,7 @@ const MyProjects = () => {
                   {project.title}
                 </h3>
 
-                <p className="flex-1 text-sm leading-7 text-gray-300 md:text-base">
+                <p className="flex-1 text-sm leading-7 text-gray-300 md:text-base text-justify">
                   {project.description}
                 </p>
 
